@@ -13,19 +13,6 @@ function highlightBorder(event) {
     event.target.style.borderColor = "#7D08D9";
 }
 
-function enableButton() {
-    const nextBtn = li_loginBtn.querySelector('.login_box');
-    
-    // 입력 필드 중 하나라도 값이 있는 경우 버튼 활성화
-    if (li_email.value.length > 0 || li_pw.value.length > 0) {
-        nextBtn.style.backgroundColor = "#7D08D9";
-        nextBtn.style.cursor = "pointer";
-    } else {
-        nextBtn.style.backgroundColor = "";
-        nextBtn.style.cursor = "";
-    }
-}
-
 function moveToMain() {
     location.replace("./main.html");
 }

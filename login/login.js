@@ -5,11 +5,9 @@ const li_pw = document.getElementById('li_pw_input');
 const li_loginBtn = document.getElementById('li_login_btn');
 
 function highlightBorder(event) {
-    // 모든 입력 필드의 테두리 색상 초기화
     li_email.style.borderColor = "";
     li_pw.style.borderColor = "";
     
-    // 클릭된 요소의 테두리 색상 변경
     event.target.style.borderColor = "#7D08D9";
 }
 

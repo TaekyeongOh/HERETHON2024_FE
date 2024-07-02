@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+	background-color: blue;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+	width: 232px;
+	height: 268px;
+}
+
+.button {
+    border: none;
+    width: 232px;
+    height: 64px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#drop-content {
+    position: relative;
+    display: none;
+	top: 12px;
+	left: 12px;
+	width: 208px;
+	height: 202px;
+	border-radius: 8px;
+	background-color: #ffffff;
+}
+
+#drop-content a {
+    display: block;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+	font-family: Pretendard;
+	padding: 12px 16px 12px 16px;
+	gap: 10px;
+}

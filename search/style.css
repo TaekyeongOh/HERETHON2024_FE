@@ -7,6 +7,14 @@ body{
     height: 1080px;
     position: relative;
     margin: 0;
+    padding: 0;
+}
+.header1{
+    width: 1777px;
+    height: 76px;
+    top: 0;
+    left: 0;
+    position: relative;
 }
 .codea{
     color:#7D08D9;
@@ -19,12 +27,15 @@ body{
 	text-align:left;
 	font-size:36px;
 }
-li{
+.headerNav ul{
+    display: inline-flex;
+}
+.headerNav li{
     list-style: none;
     display: inline-flex;
 }
 .home{
-    position: relative;
+    position: absolute;
     left: 1255px;
     top: 24px;
     font-family: Pretendard;
@@ -64,29 +75,44 @@ li{
     top: 174px;
 }
 .header2{
-    display: flex;
+    position: relative;
+    width: 1777px;
+    height: 100px;
+    top: 0;
 }
 .DM_btn{
-    position: absolute;
-}
-.DM_btn img{
-    width: 48px;
+    position: relative;
+    width: 88px;
     height: 48px;
     top: 27px;
     left: 1633px;
-    position: absolute;
+    display: flex;
+    align-items: center;
 }
-.dmRigntIcon img{
+.DM_btn_a {
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+.DM_btn_img1{
+    width: 48px;
+    height: 48px;
+    top: 0px;
+    left: 0px;
+    position: relative;
+}
+
+.dmRigntIcon{
     position: relative;
     width: 32px;
     height: 32px;
-    left: 1689px;
-    top: 35px;
+    left: 8px;
+    top: 0px;
 }
 .wrap{
     position:flex;
     width: 1777px;
-    height: 960px;
+    height: 100%;
 }
 .side{
     position: absolute;
@@ -94,6 +120,14 @@ li{
     height: 906px;
     background-color: #F7F7F7;
     top: 176px;
+}
+.addfriend{
+    position: relative;
+    width: 180px;
+    height: 120px;
+    left: 70px;
+    top: 318px;
+    border: none;
 }
 .friendBtn{
     position: absolute;
@@ -188,15 +222,90 @@ li{
     box-shadow: 0px 0px 10px #C4C4C4;
     margin-bottom: 16px;
 }
-.friendToDo{
+.anotherProblem{
+    left: 384px;
+    top: 298px;
+    font-family: Pretendard;
+    font-size: 28px;
+    position: absolute;
+}
+.problem{
+    width: 432px;
+    height: 120px;
+    border-radius: 10px;
+    background-color: #F7F7F7;
     position: relative;
-    left: 537px;
-    top: 282px;
+    margin-left:32px ;
+    gap: 32px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+.problems{
     display: flex;
+    left: 374px;
+    top: 364px;
+    position: absolute;
+}
+.problem span{
+    width: 384px;
+    height: 72px;
+    font-family: Pretendard;
+    font-size: 20px;
+    color: #454545;
+    position: relative;
+    box-sizing: border-box;
+}
+.anotherToDo{
+    height: 37px;
+    left: 384px;
+    top: 398px;
+    position: relative;
+}
+.anotherToDo span{
+    font-family: Pretendard;
+    font-size: 28px;
+}
+.friendToDo{
+    left: 520px;
+    top: 675px;
+    display: flex;
+    gap: 64px;
+    position: absolute;
 }
 .friend{
     width: 480px;
     height: 440px;
+    background-color: #F7F7F7;
+    border-radius: 20px;
+    position: absolute;
+    box-shadow: 0px 0px 10px #C4C4C4;
+    margin-right: 64px;
+}
+.friend2{
+    width: 480px;
+    height: 440px;
+    left: 576px;
+    background-color: #F7F7F7;
+    border-radius: 20px;
+    position: absolute;
+    box-shadow: 0px 0px 10px #C4C4C4;
+    margin-right: 64px;
+}
+.friend3{
+    width: 480px;
+    height: 440px;
+    top: 536px;
+    background-color: #F7F7F7;
+    border-radius: 20px;
+    position: absolute;
+    box-shadow: 0px 0px 10px #C4C4C4;
+    margin-right: 64px;
+}
+.friend4{
+    width: 480px;
+    height: 440px;
+    top: 536px;
+    left: 576px;
     background-color: #F7F7F7;
     border-radius: 20px;
     position: absolute;
@@ -237,7 +346,24 @@ li{
     height: 29px;
     left: 136px;
     top: 72px;
+    line-height: 29px;
     background-color: #E1FEF4;
+}
+.fc_back{
+    width: 74px;
+    height: 29px;
+    left: 136px;
+    top: 72px;
+    line-height: 29px;
+    background-color: #FEE5E1;
+}
+.fc_full{
+    width: 74px;
+    height: 29px;
+    line-height: 29px;
+    left: 136px;
+    top: 72px;
+    background-color: #FFEFB8;
 }
 .friend_iconRight{
     width: 32px;

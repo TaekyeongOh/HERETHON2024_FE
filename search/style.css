@@ -44,8 +44,8 @@ body{
 }
 .home{
     position: absolute;
-    left: 1255px;
-    top: 24px;
+    left: 1074px;
+    top: 22px;
     font-family: Pretendard;
     font-size: 24px;
     color: #919191;
@@ -53,17 +53,26 @@ body{
 }
 .search{
     position: absolute;
-    left: 1396px;
-    top: 24px;
+    left: 1215px;
+    top: 22px;
     color: #7D08D9;
     font-family: Pretendard;
     font-size: 24px;
     font-weight: 600;
 }
+.nav_point{
+    position: absolute;
+    left: 1377px;
+    top: 22px;
+    font-family: Pretendard;
+    font-size: 24px;
+    color: #919191;
+    font-weight: 600;
+}
 .logout{
     position: absolute;
-    left: 1598px;
-    top: 24px;
+    left: 1600px;
+    top: 22px;
     font-family: Pretendard;
     font-size: 24px;
     font-weight: 600;
@@ -177,10 +186,13 @@ body{
     height: 24px;
     border-radius: 20px;
     left: 76px;
-    top: 16px;
+    top: 4px;
+    font-family: Pretendard;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
+    font-weight: 500;
     position: absolute;
 }
 .c_back{
@@ -192,6 +204,9 @@ body{
 .c_full{
     background-color: #FFEFB8;
 }
+.c_unselect{
+    background-color: #FFEBF2;
+}
 .category span {
     font-family: Pretendard;
     font-size: 12px;
@@ -201,6 +216,9 @@ body{
     left: 143px;
     top: 16px;
     position: relative;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-weight: 600;
 }
 .pername span{
     font-family: Pretendard;
@@ -232,6 +250,48 @@ body{
     background-color: #ffffff;
     box-shadow: 0px 0px 10px #C4C4C4;
     margin-bottom: 16px;
+}
+.selectCategory {
+    display: flex;
+    left: 643px;
+    top: 198px;
+    position: absolute;
+}
+
+.selectCategory div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Pretendard;
+    font-size: 24px;
+    line-height: 64px;
+    border-radius: 36px;
+    height: 64px;
+    border: 2px solid #ABABAB;
+    background-color: #F7F7F7;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.sc_all {
+    width: 122px;
+}
+
+.sc_front {
+    width: 184px;
+}
+
+.sc_back {
+    width: 143px;
+}
+
+.sc_full {
+    width: 143px;
+}
+
+.sc_unsel {
+    width: 122px;
+    margin-right: 0;
 }
 .anotherProblem{
     left: 384px;
@@ -302,7 +362,7 @@ body{
     box-shadow: 0px 0px 10px #C4C4C4;
     margin-right: 64px;
 }
-/* .friend2{
+.friend2{
     width: 480px;
     height: 440px;
     left: 576px;
@@ -332,7 +392,7 @@ body{
     position: absolute;
     box-shadow: 0px 0px 10px #C4C4C4;
     margin-right: 64px;
-} */
+}
 .friend_profile{
     background-color: #FFFFFF;
     width: 480px;
@@ -386,6 +446,14 @@ body{
     top: 72px;
     background-color: #FFEFB8;
 }
+.fc_unselect{
+    width: 74px;
+    height: 29px;
+    line-height: 29px;
+    left: 136px;
+    top: 72px;
+    background-color: #FFEBF2;
+}
 .friend_iconRight{
     width: 32px;
     height: 32px;
@@ -402,6 +470,9 @@ body{
 }
 .completeToDo_list{
     display: block;
+    top: 160px;
+    left: 24px;
+    position: absolute;
 }
 .completeToDo{
     display: flex;
@@ -420,7 +491,7 @@ body{
     font-family: Pretendard;
     font-size: 20px;
     text-align: left;
-    left: 68px;
+    left: 0px;
     top: 20px;
     position: relative;
 }

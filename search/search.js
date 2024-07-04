@@ -1,31 +1,50 @@
-// card array
 const friends_news = [
-    { category: '프론트', name: '변하늘', img: "", progress: ""},
-    { category: '프론트', name: '유지민', img: "", progress: ""},
-    { category: '풀스택', name: '김민지', img: "", progress: ""},
-    { category: '프론트', name: '김민지', img: "", progress: ""},
-    { category: '백', name: '윤지수', img: "", progress: ""}
-]
+    { category: '프론트', name: '변하늘', img: "profile.png", progress: "" },
+    { category: '미정', name: '유지민', img: "profile.png", progress: "" },
+    { category: '풀스택', name: '김민지', img: "profile.png", progress: "" },
+    { category: '프론트', name: '김민지', img: "profile.png", progress: "" },
+    { category: '백', name: '윤지수', img: "profile.png", progress: "" }
+  ];
 
-const friendNews = document.getElementById('achiveDegree');
+  const friendNews = document.getElementById('achiveDegree');
 
-function createCard(category, pername) {
+  function createCard(category, pername, img) {
     const friend_news_card = document.createElement('div');
     friend_news_card.classList.add('friend_news_card');
+
+    const friendImg = document.createElement('img');
+    friendImg.classList.add('perImg');
+    friendImg.src ='./profile.png';
+    friendImg.textContent = img;
 
     const cardName = document.createElement('p');
     cardName.classList.add('pername');
     cardName.textContent = pername;
 
     const cardCate = document.createElement('p');
-    cardCate.classList.add('category', 'c_front');
+    cardCate.classList.add('category');
+    if (category === '프론트') {
+      cardCate.classList.add('c_front');
+    } else if (category === '풀스택') {
+      cardCate.classList.add('c_full');
+    } else if (category === '백') {
+      cardCate.classList.add('c_back');
+    }else if (category === '미정') {
+        cardCate.classList.add('c_unselect');
+      }
     cardCate.textContent = category;
 
+    friend_news_card.appendChild(friendImg);
     friend_news_card.appendChild(cardName);
     friend_news_card.appendChild(cardCate);
 
     return friend_news_card;
-}
+  }
+
+  friends_news.forEach(friend => {
+    const card = createCard(friend.category, friend.name, friend.img);
+    friendNews.appendChild(card);
+  });
 
 // friends_news 배열이 비어있는지 확인
 if (friends_news.length === 0) {
@@ -70,3 +89,22 @@ for (const item of problems) {
     const problem = create_P_Card(item.problem);
     problemCards.appendChild(problem);
 }
+
+
+//-------
+
+document.addEventListener('DOMContentLoaded', function() {
+  const categories = document.querySelectorAll('.selectCategory div');
+  
+  categories.forEach(category => {
+      category.addEventListener('click', function() {
+          categories.forEach(c => {
+              c.style.backgroundColor = '#F7F7F7';
+              c.style.border = '2px solid #ABABAB';
+          });
+        
+          this.style.backgroundColor = '#F8F0FE';
+          this.style.border = '2px solid #7D08D9';
+      });
+  });
+});

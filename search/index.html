@@ -15,7 +15,12 @@
 <body>
     <header>
         <div class="header1">
-            <div class="codea">codea</div>
+            <div class="codea">
+                <a>
+                    <img src="./logo-codea.png">
+                </a>
+                codea
+            </div>
             <nav class="headerNav">
                 <ul>
                     <li class="home">
@@ -54,8 +59,11 @@
                     <img class="percheck" src="./percheck.png">
                     <span>친구 소식</span>
                 </div>
-                <div class="achiveDegree">
-                    <div class="friend_news">
+                <div class="achiveDegree" id="achiveDegree">
+                    <div class="friend_news" id="friend_news"></div>
+                </div>
+            </div>
+                    <!-- <div class="friend_news">
                         <div>
                             <a>
                                 <img class="perImg" src="./profile.png">
@@ -73,88 +81,15 @@
                                 <img class="iconRight" src="./right_icon.png">
                             </a>
                         </div>
-                    </div>
-                    <div class=" friend_news">
-                        <div>
-                            <a>
-                                <img class="perImg" src="./profile.png">
-                            </a>
-                        </div>
-                        <div class="category c_front">
-                            <span>프론트</span>
-                        </div>
-                        <div class="pername">
-                            <span>유지민</span>
-                        </div>
-                        <div class="degree"></div>
-                        <div>
-                            <a>
-                                <img class="iconRight" src="./right_icon.png">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="friend_news">
-                        <div>
-                            <a>
-                                <img class="perImg" src="./profile.png">
-                            </a>
-                        </div>
-                        <div class="category c_full">
-                            <span>풀스택</span>
-                        </div>
-                        <div class="pername">
-                            <span>김민정</span>
-                        </div>
-                        <div class="degree"></div>
-                        <div>
-                            <a>
-                                <img class="iconRight" src="./right_icon.png">
-                            </a>
-                        </div>
-                    </div>
-                    <div class=" friend_news">
-                        <div>
-                            <a>
-                                <img class="perImg" src="./profile.png">
-                            </a>
-                        </div>
-                        <div class="category c_front">
-                            <span>프론트</span>
-                        </div>
-                        <div class="pername">
-                            <span>김민지</span>
-                        </div>
-                        <div class="degree"></div>
-                        <div>
-                            <a>
-                                <img class="iconRight" src="./right_icon.png">
-                            </a>
-                        </div>
-                    </div>
-                    <div class=" friend_news">
-                        <div>
-                            <a>
-                                <img class="perImg" src="./profile.png">
-                            </a>
-                        </div>
-                        <div class="category c_back">
-                            <span>백</span>
-                        </div>
-                        <div class="pername">
-                            <span>윤지수</span>
-                        </div>
-                        <div class="degree"></div>
-                        <div>
-                            <a>
-                                <img class="iconRight" src="./right_icon.png">
-                            </a>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="selectCategory"></div>
             <div class="anotherProblem">다른 개발자들의 고민을 들어주세요!</div>
-            <div class="problems">
+            <div class="problems" id="problems">
+                <div class="problem"></div>
+            </div>
+            <!-- <div class="problems" id="problems">
                 <div class="problem">
                     <span>
                         제 능력을 못믿는 분들이 있는 경우에는 어떻게 해야할까요?
@@ -170,7 +105,7 @@
                         제 능력을 못믿는 분들이 있는 경우에는 어떻게 해야할까요?
                     </span>
                 </div>
-            </div>
+            </div> -->
             <div class="anotherToDo">
                 <span>다른 개발자들의 To Do를 탐색해보세요!</span>
             </div>
@@ -178,8 +113,8 @@
                 <div class="friend">
                     <div class="friend_profile">
                         <div>
-                            <a class="friendImg">
-                                <img src="./profile.png">
+                            <a>
+                                <img src="./profile.png" class="friendImg">
                             </a>
                         </div>
                         <div class="friendName">
@@ -230,7 +165,7 @@
                     </div>
                 </div>
                 <!-- ----------- -->
-                <div class="friend2">
+                <!-- <div class="friend2">
                     <div class="friend_profile">
                         <div>
                             <a class="friendImg">
@@ -284,7 +219,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- ----------- -->
+                
                 <div class="friend3">
                     <div class="friend_profile">
                         <div>
@@ -339,7 +274,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- ----------- -->
+            
                 <div class="friend4">
                     <div class="friend_profile">
                         <div>
@@ -393,7 +328,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
     </main>
 
@@ -401,6 +336,7 @@
     <footer>
 
     </footer>
+<script src="./search.js"></script>
 </body>
 
 </html>

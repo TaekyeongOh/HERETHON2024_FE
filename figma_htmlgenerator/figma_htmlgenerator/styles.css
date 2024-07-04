@@ -1,3 +1,14 @@
+.fe_closed{
+    width: 232px;
+    height: 64px;
+    border-radius: 36px;
+    background-color: #E1FEF4;
+    border: 2px;
+    border-color:#1DF7A8 ;
+}
+
+
+
 body {
     margin: 0;
     padding: 0;

@@ -23,17 +23,21 @@
             </div>
             <nav class="headerNav">
                 <ul>
-                    <li class="home">
-                        홈
+                    <!-- href 추가 -->
+                    <li class="home" onclick="location.href='./'">
+                            홈
                     </li>
-                    <li class="search">
-                        탐색
+                    <li class="search" onclick="location.href='./'">
+                        <!-- href 추가 -->
+                            탐색
                     </li>
-                    <li class="nav_point">
-                        포인트
+                    <!-- href 추가 -->
+                    <li class="nav_point" onclick="location.href='./'">
+                            포인트
                     </li>
-                    <li class="logout">
-                        로그아웃
+                    <!-- href 추가 -->
+                    <li class="logout" onclick="location.href='./'">
+                        로그아웃   
                     </li>
                 </ul>
             </nav>
@@ -44,7 +48,7 @@
                 <a class="DM_btn_a">
                     <img src="./icon-dm.png" class="DM_btn_img1">
                 </a>
-                <a class="DM_btn_a">
+                <a class="DM_btn_a" href="">
                     <img src="./right_icon.png" class="dmRigntIcon">
                 </a>
             </div>
@@ -66,41 +70,22 @@
                     <div class="friend_news" id="friend_news"></div>
                 </div>
             </div>
-                    <!-- <div class="friend_news">
-                        <div>
-                            <a>
-                                <img class="perImg" src="./profile.png">
-                            </a>
-                        </div>
-                        <div class="category c_front">
-                            <span>프론트</span>
-                        </div>
-                        <div class="pername">
-                            <span>변하늘</span>
-                        </div>
-                        <div class="degree"></div>
-                        <div>
-                            <a>
-                                <img class="iconRight" src="./right_icon.png">
-                            </a>
-                        </div>
-                    </div> -->
                 </div>
             </div>
             <div class="selectCategory">
-                <div class="sc_all">
+                <div class="sc_all filter-btn" data-category="전체">
                     <span>전체</span>
                 </div>
-                <div class="sc_front">
-                    <span>프론트앤드</span>
+                <div class="sc_front filter-btn" data-category="프론트">
+                    <span>프론트엔드</span>
                 </div>
-                <div class="sc_back">
+                <div class="sc_back filter-btn" data-category="백엔드">
                     <span>백엔드</span>
                 </div>
-                <div class="sc_full">
+                <div class="sc_full filter-btn" data-category="풀스택">
                     <span>풀스택</span>
                 </div>
-                <div class="sc_unsel">
+                <div class="sc_unsel filter-btn" data-category="미정">
                     <span>미정</span>
                 </div>
             </div>
@@ -111,233 +96,9 @@
             <div class="anotherToDo">
                 <span>다른 개발자들의 To Do를 탐색해보세요!</span>
             </div>
-            <div class="friendToDo">
-                <div class="friend">
-                    <div class="friend_profile">
-                        <div>
-                            <a>
-                                <img src="./profile.png" class="friendImg">
-                            </a>
-                        </div>
-                        <div class="friendName">
-                            <span>김민지</span>
-                        </div>
-                        <div class="friend_category fc_front">
-                            <span>프론트</span>
-                        </div>
-                        <a>
-                            <img class="friend_iconRight" src="./right_icon.png">
-                        </a>
-                    </div>
-                    <div class="complete_friend_todo">
-                        <div class="completeToDo_list">
-                            <div class="completeToDo">
-                                <div class="checked">
-                                    <a>
-                                        <img src="./checkbox.png">
-                                    </a>
-                                </div>
-                                <div class="complete_work">완료된 일 입력</div>
-                            </div>
-                            <div class="completeToDo">
-                                <div class="checked">
-                                    <a>
-                                        <img src="./checkbox.png">
-                                    </a>
-                                </div>
-                                <div class="complete_work">완료된 일 입력</div>
-                            </div>
-                            <div class="completeToDo">
-                                <div class="checked">
-                                    <a>
-                                        <img src="./checkbox.png">
-                                    </a>
-                                </div>
-                                <div class="complete_work">완료된 일 입력</div>
-                            </div>
-                            <div class="completeToDo">
-                                <div class="checked">
-                                    <a>
-                                        <img src="./checkbox.png">
-                                    </a>
-                                </div>
-                                <div class="complete_work">완료된 일 입력</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ----------- -->
-                <div class="friend2">
-                    <div class="friend_profile">
-                        <div>
-                            <a>
-                                <img src="./profile.png" class="friendImg">
-                            </a>
-                        </div>
-                        <div class="friendName">
-                            <span>여예원</span>
-                        </div>
-                        <div class="friend_category fc_front">
-                            <span>프론트</span>
-                        </div>
-                        <a>
-                            <img class="friend_iconRight" src="./right_icon.png">
-                        </a>
-                    </div>
-                    <div class="complete_friend_todo">
-                        <div class="completeToDo_list">
-                            <div class="completeToDo">
-                                <div class="checked">
-                                    <a>
-                                        <img src="./checkbox.png">
-                                    </a>
-                                </div>
-                                <div class="complete_work">완료된 일 입력</div>
-                            </div>
-                            <div class="completeToDo">
-                                <div class="checked">
-                                    <a>
-                                        <img src="./checkbox.png">
-                                    </a>
-                                </div>
-                                <div class="complete_work">완료된 일 입력</div>
-                            </div>
-                            <div class="completeToDo">
-                                <div class="checked">
-                                    <a>
-                                        <img src="./checkbox.png">
-                                    </a>
-                                </div>
-                                <div class="complete_work">완료된 일 입력</div>
-                            </div>
-                            <div class="completeToDo">
-                                <div class="checked">
-                                    <a>
-                                        <img src="./checkbox.png">
-                                    </a>
-                                </div>
-                                <div class="complete_work">완료된 일 입력</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="friend3">
-                    <div class="friend_profile">
-                        <div>
-                            <a>
-                                <img src="./profile.png" class="friendImg">
-                            </a>
-                        </div>
-                        <div class="friendName">
-                            <span>김민지</span>
-                        </div>
-                        <div class="friend_category fc_front">
-                            <span>프론트</span>
-                        </div>
-                        <a>
-                            <img class="friend_iconRight" src="./right_icon.png">
-                        </a>
-                    </div>
-                    <div class="complete_friend_todo">
-                        <div class="completeToDo_list">
-                            <div class="completeToDo">
-                                <div class="checked">
-                                    <a>
-                                        <img src="./checkbox.png">
-                                    </a>
-                                </div>
-                                <div class="complete_work">완료된 일 입력</div>
-                            </div>
-                            <div class="completeToDo">
-                                <div class="checked">
-                                    <a>
-                                        <img src="./checkbox.png">
-                                    </a>
-                                </div>
-                                <div class="complete_work">완료된 일 입력</div>
-                            </div>
-                            <div class="completeToDo">
-                                <div class="checked">
-                                    <a>
-                                        <img src="./checkbox.png">
-                                    </a>
-                                </div>
-                                <div class="complete_work">완료된 일 입력</div>
-                            </div>
-                            <div class="completeToDo">
-                                <div class="checked">
-                                    <a>
-                                        <img src="./checkbox.png">
-                                    </a>
-                                </div>
-                                <div class="complete_work">완료된 일 입력</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="friend4">
-                    <div class="friend_profile">
-                        <div>
-                            <a>
-                                <img src="./profile.png" class="friendImg">
-                            </a>
-                        </div>
-                        <div class="friendName">
-                            <span>김민지</span>
-                        </div>
-                        <div class="friend_category fc_front">
-                            <span>프론트</span>
-                        </div>
-                        <a>
-                            <img class="friend_iconRight" src="./right_icon.png">
-                        </a>
-                    </div>
-                    <div class="complete_friend_todo">
-                        <div class="completeToDo_list">
-                            <div class="completeToDo">
-                                <div class="checked">
-                                    <a>
-                                        <img src="./checkbox.png">
-                                    </a>
-                                </div>
-                                <div class="complete_work">완료된 일 입력</div>
-                            </div>
-                            <div class="completeToDo">
-                                <div class="checked">
-                                    <a>
-                                        <img src="./checkbox.png">
-                                    </a>
-                                </div>
-                                <div class="complete_work">완료된 일 입력</div>
-                            </div>
-                            <div class="completeToDo">
-                                <div class="checked">
-                                    <a>
-                                        <img src="./checkbox.png">
-                                    </a>
-                                </div>
-                                <div class="complete_work">완료된 일 입력</div>
-                            </div>
-                            <div class="completeToDo">
-                                <div class="checked">
-                                    <a>
-                                        <img src="./checkbox.png">
-                                    </a>
-                                </div>
-                                <div class="complete_work">완료된 일 입력</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="friendToDo" id="friendToDo"></div>
+        </div>
     </main>
-
-
-    <footer>
-
-    </footer>
 <script src="./search.js"></script>
 </body>
 

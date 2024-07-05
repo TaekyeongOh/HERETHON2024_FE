@@ -37,10 +37,13 @@ body{
 }
 .headerNav ul{
     display: inline-flex;
+    text-decoration: none;
+    
 }
 .headerNav li{
     list-style: none;
     display: inline-flex;
+    text-decoration: none;
 }
 .home{
     position: absolute;
@@ -237,7 +240,7 @@ body{
     width: 24px;
     height: 24px;
     left: 244px;
-    top: 5px;
+    top: -10px;
     position: relative;
 }
 .friend_news_card{
@@ -326,6 +329,7 @@ body{
     color: #454545;
     position: relative;
     box-sizing: border-box;
+    margin: 0;
 }
 .anotherToDo{
     height: 37px;
@@ -337,148 +341,144 @@ body{
     font-family: Pretendard;
     font-size: 28px;
 }
-.friendToDo{
+
+.friendToDo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 64px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
     left: 520px;
     top: 675px;
-    display: flex;
-    gap: 64px;
-    position: absolute;
 }
-.friend{
+
+.friend {
     width: 480px;
     height: 440px;
     background-color: #F7F7F7;
     border-radius: 20px;
-    position: absolute;
+    position: relative;
     box-shadow: 0px 0px 10px #C4C4C4;
-    margin-right: 64px;
+    margin-right: 64px; 
+    left: 0px;
+    top: 0px;
+    margin: 0 auto;
 }
-#friend{
-    width: 480px;
-    height: 440px;
-    background-color: #F7F7F7;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 0px 0px 10px #C4C4C4;
-    margin-right: 64px;
-}
-.friend2{
-    width: 480px;
-    height: 440px;
-    left: 576px;
-    background-color: #F7F7F7;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 0px 0px 10px #C4C4C4;
-    margin-right: 64px;
-}
-.friend3{
-    width: 480px;
-    height: 440px;
-    top: 536px;
-    background-color: #F7F7F7;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 0px 0px 10px #C4C4C4;
-    margin-right: 64px;
-}
-.friend4{
-    width: 480px;
-    height: 440px;
-    top: 536px;
-    left: 576px;
-    background-color: #F7F7F7;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 0px 0px 10px #C4C4C4;
-    margin-right: 64px;
-}
-.friend_profile{
+
+.friend_profile {
     background-color: #FFFFFF;
+    left: 0;
+    top: 0;
     width: 480px;
     height: 144px;
     border-radius: 10px 10px 0 0;
+    align-items: center;
+    justify-content: space-between;
+    
 }
 .friendImg{
-    width: 96px;
-    height: 96px;
+    width: 0;
+    height: 0;
     left: 24px;
     top: 24px;
-    position: relative;
 }
-.friendName{
+.friendImg img{
+    width: 96px;
+    height: 96px;
+    top: 24px;
+    left: 24px;
     position: absolute;
+}
+
+.friendName {
+    position: absolute; 
     left: 136px;
-    top: 28px;
+    top: 35px;
     font-family: Pretendard;
     font-size: 24px;
+    font-weight: 600;
+    margin: 0;
 }
-.friend_category{
-    position: absolute;
+
+.friend_category {
+    position: relative;
     left: 136px;
-    top: 72px;
+    top: 44px;
     text-align: center;
     border-radius: 20px;
     font-size: 16px;
     font-family: Pretendard;
+    font-weight: 600;
+    margin: 0;
 }
-.fc_front{
+
+.fc_front {
     width: 74px;
     height: 29px;
-    left: 136px;
-    top: 72px;
     line-height: 29px;
     background-color: #E1FEF4;
 }
-.fc_back{
+
+.fc_back {
     width: 74px;
     height: 29px;
-    left: 136px;
-    top: 72px;
     line-height: 29px;
     background-color: #FEE5E1;
 }
-.fc_full{
+
+.fc_full {
     width: 74px;
     height: 29px;
     line-height: 29px;
-    left: 136px;
-    top: 72px;
     background-color: #FFEFB8;
 }
-.fc_unselect{
+
+.fc_undefined {
     width: 74px;
     height: 29px;
     line-height: 29px;
-    left: 136px;
-    top: 72px;
     background-color: #FFEBF2;
 }
-.friend_iconRight{
+
+.friend_iconRight {
     width: 32px;
     height: 32px;
-    left: 440px;
+    position: relative;
     top: 56px;
-    position: absolute;
+    left: 440px;
 }
 .complete_friend_todo{
-    width: 432px;
+    width: 432px; 
     height: 256px;
-    top: 160px;
+    top: 16px;
     left: 24px;
-    position: absolute;
+    position: relative;
 }
 .completeToDo_list{
-    display: block;
-    top: 160px;
-    left: 24px;
-    position: absolute;
+    display: inline;
+    top: 0px;
+    left: 0;
+    position: relative;
 }
 .completeToDo{
-    display: flex;
+    display: inline;
     width: 432px;
     height: 64px;
     padding: 0;
+}
+.complete_work{
+    font-family: Pretendard;
+    font-size: 20px;
+    text-align: left;
+    left: 74px;
+    top: 7px;
+    position: relative;
+}
+.checked{
+    width: 0;
+    height: 0;
+
 }
 .checked img{
     width: 24px;
@@ -486,12 +486,5 @@ body{
     top: 20px;
     left: 32px;
     position: relative;
-}
-.complete_work{
-    font-family: Pretendard;
-    font-size: 20px;
-    text-align: left;
-    left: 0px;
-    top: 20px;
-    position: relative;
+    margin: 8px;
 }
